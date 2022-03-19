@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// TODO: add background music to app using a web api
+
 public class Sudoku {
 //    static int[][] grid;
 //    static boolean blur;
@@ -15,8 +17,8 @@ public class Sudoku {
                 else System.out.print(item +"\t");
                 spacer++;
             }
-            System.out.println("");
-            if(spacer2 % 3 == 0) System.out.println("");
+            System.out.println();
+            if(spacer2 % 3 == 0) System.out.println();
         }
     }
 
@@ -41,8 +43,12 @@ public class Sudoku {
 //        blur = false;
         Creator creator = new Creator();
 
+        //following 2 lines print grid -- needed
         printGrid(creator.getFull_grid(), true);
-        printGrid(creator.getBlanks_grid(), true);
+//        printGrid(creator.getBlanks_grid(), true);
+
+
+        //following lines enable player input loop
 //        boolean keep_looping = true;
 //        while(keep_looping){
 //            printGrid(creator.getBlanks_grid(), true);
